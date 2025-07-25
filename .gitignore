@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Firebase specific
+.firebase/
+.env
+firebase-debug.log
+firebase-emulator-cache/
+
+# Build artifacts (if applicable for hosting)
+build/
+dist/
+
+# Editor/IDE specific
+.vscode/
+
+# Logs
+*.log
