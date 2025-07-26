@@ -50,7 +50,7 @@ const ProjectCard = ({ project }) => {
     return (
         <div className='card bg-base-300 mx-20 min-h-full min-w-0 my-5'>
             <div className='card-body w-full'>
-                <h3 className='card-title text-2xl '> {project.name} {currProjectImg} </h3>
+                <h3 className='card-title text-2xl '> {project.name} </h3>
                 <div className='md:flex md:justify-between'>
 
                     {/* Screenshots */}
