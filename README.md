@@ -2,4 +2,4 @@
  The portfolio site of Alexis Hampton which features her most notable works.
 
 ### Technologies Used:
-- Node.js, React, Tailwind CSS, DaisyUI
+- Firebase, React, Javascript, Tailwind CSS, DaisyUI, Node.js
