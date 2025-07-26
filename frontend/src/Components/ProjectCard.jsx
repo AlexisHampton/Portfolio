@@ -27,13 +27,18 @@ const ProjectCard = ({ project }) => {
     }
 
     function handleScreenshotImageChange(canIncrease) {
+        let currProjImg = currProjectImg;
         if (canIncrease)
-            setCurrProjectImg((currProjectImg + 1) % project.screenshots.length);
+            currProjImg += 1;
         else
-            setCurrProjectImg((currProjectImg - 1) % project.screenshots.length);
+            currProjImg -= 1;
+        if (currProjImg < 0)
+            currProjImg = project.screenshots.length - 1;
+        setCurrProjectImg(currProjImg % project.screenshots.length);
     }
 
     function handleChallengeTextChange(canIncrease) {
+
         if (canIncrease)
             setCurrChallengeText((currChallengeText + 1) % project.challenges.length);
         else
@@ -43,9 +48,9 @@ const ProjectCard = ({ project }) => {
 
 
     return (
-        <div className='card bg-base-300 mx-20 min-h-full min-w-0 '>
+        <div className='card bg-base-300 mx-20 min-h-full min-w-0 my-5'>
             <div className='card-body w-full'>
-                <h3 className='card-title text-2xl '> {project.name} </h3>
+                <h3 className='card-title text-2xl '> {project.name} {currProjectImg} </h3>
                 <div className='md:flex md:justify-between'>
 
                     {/* Screenshots */}
