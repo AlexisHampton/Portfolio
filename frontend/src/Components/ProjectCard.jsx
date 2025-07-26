@@ -54,7 +54,7 @@ const ProjectCard = ({ project }) => {
                 <div className='md:flex md:justify-between'>
 
                     {/* Screenshots */}
-                    <div className='mx-2 w-1/2'>
+                    <div className='mx-2 md:w-1/2'>
                         <img src={project.screenshots[currProjectImg]} alt={project.screenshotAlts[currProjectImg]} className=' object-cover  rounded-2xl' />
                         <div className='my-3 flex justify-center'>
                             <button className='btn btn-accent flex items-center mx-2' onClick={() => handleScreenshotImageChange(false)}> prev </button>
@@ -63,7 +63,7 @@ const ProjectCard = ({ project }) => {
                     </div>
 
                     {/* Project Information */}
-                    <div className='w-1/2'>
+                    <div className='md:w-1/2'>
                         <div className='card mx-2 p-3 bg-base-100 min-h-10/12'>
                             <div className='md:flex md:justify-center'>
                                 <button onClick={handleOnSummary} className='btn btn-outline btn-secondary px-6 '>
