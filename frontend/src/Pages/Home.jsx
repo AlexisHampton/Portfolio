@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import ProjectCard from '../Components/ProjectCard'
-import GetSimulationProjectDetails from '../Text/Projects'
+import { GetSimulationProjectDetails } from '../Text/Projects'
 
 const Home = () => {
     return (
