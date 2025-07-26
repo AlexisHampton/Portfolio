@@ -80,10 +80,10 @@ const ProjectCard = ({ project }) => {
                             <div className=''>
                                 {isSummary && <h3 className='p-2 whitespace-pre-line'>{project.summary}</h3>}
                                 {isDetails && <div className='p-2'>
-                                    <h3> Date Created: {project.date} </h3>
-                                    <h3> Tech Stack: {project.techStack}</h3>
-                                    <h3> Github: <a className='text-secondary link' target='blank' href={project.github}> {project.github} </a></h3>
-                                    {project.deployed && <h3> Deployed Link: <a className='text-error link' target='blank' href={project.deployed}> {project.deployed}</a> </h3>}
+                                    <h3> <span className='font-bold text-neutral'> Date Created:</span> {project.date} </h3>
+                                    <h3> <span className='font-bold text-neutral'>Tech Stack:</span> {project.techStack}</h3>
+                                    <h3> <span className='font-bold text-neutral'>Github:</span> <a className='text-secondary link' target='blank' href={project.github}> {project.github} </a></h3>
+                                    {project.deployed && <h3> <span className='font-bold text-neutral'>Deployed Link:</span> <a className='text-error link' target='blank' href={project.deployed}> {project.deployed}</a> </h3>}
                                 </div>}
                                 {isChallenges &&
                                     <h3 className='p-2 text-wrap'> {project.challenges[currChallengeText]} </h3>}

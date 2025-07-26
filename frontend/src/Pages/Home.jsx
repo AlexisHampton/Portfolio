@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import ProjectCard from '../Components/ProjectCard'
-import { GetGameThoughtsProjectDetails, GetSimulationProjectDetails } from '../Text/Projects'
+import { GetGameThoughtsProjectDetails, GetSimulationProjectDetails, GetStoreInventoryProjectDetails } from '../Text/Projects'
 
 const Home = () => {
     return (
@@ -23,6 +23,7 @@ const Home = () => {
             <div className='flex mx-auto flex-col justify-center mt-10'>
                 {/* Screenshots*/}
                 <ProjectCard project={GetSimulationProjectDetails()} />
+                <ProjectCard project={GetStoreInventoryProjectDetails()} />
                 <ProjectCard project={GetGameThoughtsProjectDetails()} />
             </div>
 
